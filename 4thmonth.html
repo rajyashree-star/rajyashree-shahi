@@ -9,12 +9,12 @@
             margin: 0;
             padding: 0;
             background-color: pink;
-            display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             height: 100vh;
             overflow: hidden;
+            overflow-y: auto;
             font-family: Arial, sans-serif;
             position: relative;
         }
@@ -31,15 +31,17 @@
             background-color: white;
             color: black;
             padding: 20px;
+            box-sizing: border-box;
             border-radius: 15px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            max-width: 600px;
+            width: 90vw;
+            max-width: 800px;
             text-align: center;
             font-size: 16px;
             font-weight: bold;
+            margin: AUTO;
             position: relative;
             z-index: 2;
-            margin: auto;
             margin-top: 20px;
         }
 
@@ -86,11 +88,13 @@
     </style>
 </head>
 <body>
-    <h1>Happy 4 Month Anniversary</h1>
-    <div class="box" onclick="releaseHearts()">
-        My love, I just want to tell you how much you mean to me and how deeply I cherish every moment we share. You bring so much light and joy into my life, and every day with you feels like a blessing I never want to take for granted. Being by your side fills my heart with a kind of happiness I’ve never known, and I can’t wait for the day when I get to call myself your wife. Just thinking about our future together gives me butterflies, and I know that no matter what life throws at us, we’ll face it hand in hand.  
-        <br><br>
-        You have this incredible way of making me feel loved, safe, and so appreciated, and I hope you always know how much I adore you. Your smile can brighten my darkest days, and your voice feels like home to me. I fall more in love with you every single day, and it amazes me how you’re not just my partner but my best friend too. I want to build a lifetime of memories with you, filled with laughter, adventures, and endless love. Thank you for being everything I’ve ever dreamed of and so much more. You truly are my forever, and I am so grateful that we found each other.
+    <div class="container">
+        <h1>Happy 4 Month Anniversary</h1>
+        <div class="box" onclick="releaseHearts()">
+            My love, I just want to tell you how much you mean to me and how deeply I cherish every moment we share. You bring so much light and joy into my life, and every day with you feels like a blessing I never want to take for granted. Being by your side fills my heart with a kind of happiness I’ve never known, and I can’t wait for the day when I get to call myself your wife. Just thinking about our future together gives me butterflies, and I know that no matter what life throws at us, we’ll face it hand in hand.  
+            <br><br>
+            You have this incredible way of making me feel loved, safe, and so appreciated, and I hope you always know how much I adore you. Your smile can brighten my darkest days, and your voice feels like home to me. I fall more in love with you every single day, and it amazes me how you’re not just my partner but my best friend too. I want to build a lifetime of memories with you, filled with laughter, adventures, and endless love. Thank you for being everything I’ve ever dreamed of and so much more. You truly are my forever, and I am so grateful that we found each other.
+        </div>
     </div>
 
     <script>
