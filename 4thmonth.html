@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 Month Anniversary</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 100px;
+            margin: 0;
+            color: white;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .box {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            z-index: 2;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 200%;
+            opacity: 0.8;
+            animation: floatUp 5s linear infinite;
+        }
+
+        .chick {
+            position: absolute;
+            font-size: 300%;
+            opacity: 0.8;
+            animation: floatChicks 15s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+        }
+
+        @keyframes floatChicks {
+            0% {
+                transform: translateX(100vw);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-100vw);
+                opacity: 0.5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 4 Month Anniversary</h1>
+    <div class="box" onclick="releaseHearts()">
+        My love, I just want to tell you how much you mean to me and how deeply I cherish every moment we share. You bring so much light and joy into my life, and every day with you feels like a blessing I never want to take for granted. Being by your side fills my heart with a kind of happiness I’ve never known, and I can’t wait for the day when I get to call myself your wife. Just thinking about our future together gives me butterflies, and I know that no matter what life throws at us, we’ll face it hand in hand.  
+        <br><br>
+        You have this incredible way of making me feel loved, safe, and so appreciated, and I hope you always know how much I adore you. Your smile can brighten my darkest days, and your voice feels like home to me. I fall more in love with you every single day, and it amazes me how you’re not just my partner but my best friend too. I want to build a lifetime of memories with you, filled with laughter, adventures, and endless love. Thank you for being everything I’ve ever dreamed of and so much more. You truly are my forever, and I am so grateful that we found each other.
+    </div>
+
+    <script>
+        function releaseHearts() {
+            const body = document.body;
+            for (let i = 0; i < 50; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.textContent = '❤️';
+                heart.style.left = `${Math.random() * 100}vw`;
+                heart.style.top = `${Math.random() * 100}vh`;
+                heart.style.animationDelay = `${Math.random() * 2}s`;
+                heart.style.animationDuration = `${Math.random() * 3 + 2}s`;
+                body.appendChild(heart);
+
+                heart.addEventListener('animationend', () => heart.remove());
+            }
+        }
+
+        const body = document.body;
+        for (let i = 0; i < 60; i++) {  /* Increased number of chicks */
+            const chick = document.createElement('div');
+            chick.className = 'chick';
+            chick.textContent = '🐥';
+            chick.style.left = `${Math.random() * 100}vw`;
+            chick.style.top = `${Math.random() * 100}vh`;
+            chick.style.animationDelay = `${Math.random() * 5}s`;  /* Slight variation in start times */
+            body.appendChild(chick);
+        }
+    </script>
+</body>
+</html>
