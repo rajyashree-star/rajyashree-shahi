@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Couple Contract</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contract-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        h1 {
+            color: #1e90ff;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            margin: 10px 0;
+            padding: 0 20px;
+        }
+        .signature-space {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-box {
+            width: 45%;
+            text-align: center;
+        }
+        .signature-line {
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="contract-container">
+        <h1>Couple Contract</h1>
+        <p>This agreement is entered into on this <span id="current-date"></span> by and between the following parties:</p>
+        <ul>
+            <li><strong>Razzi:</strong> The one who always wins arguments (but let's pretend it's mutual).</li>
+            <li><strong>Pratik:</strong> The one who knows Razzi is wrong but lets them win anyway.</li>
+        </ul>
+
+        <h2>Terms and Conditions</h2>
+        <ul>
+            <li>Under no circumstances shall Razzi and Pratik break up. Seriously, the universe wouldn’t handle it well.</li>
+            <li>Razzi and Pratik are contractually obligated to get married and make everyone jealous of their happily-ever-after.</li>
+            <li>Razzi is always right. No debates, no arguments—just accept it, Pratik.</li>
+            <li>Pratik will ensure Razzi is treated to magical dates, even if it means shuffling to a fancy restaurant with a cane at age 80.</li>
+        </ul>
+
+        <h2>Signatures</h2>
+        <div class="signature-space">
+            <div class="signature-box">
+                <p>Razzi</p>
+                <div class="signature-line"></div>
+            </div>
+            <div class="signature-box">
+                <p>Pratik</p>
+                <div class="signature-line"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Love is patient, love is kind, but most importantly, love is about sharing snacks equally.</p>
+        </div>
+    </div>
+
+    <script>
+        // Set current date
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+    </script>
+</body>
+</html>
